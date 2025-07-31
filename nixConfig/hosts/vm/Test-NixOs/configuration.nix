@@ -5,11 +5,11 @@
     users = {
         florian = {
             imports = [
-                ../../modules/users/florian/bundle.nix
-                ./florian/bundle.nix
+                ../../modules/users/florian/default.nix
+                ./florian/default.nix
             ];
         };
         # You could add another user here, e.g.:
-        # guest = { imports = [ ../../modules/users/guest/bundle.nix ]; };
+        # guest = { imports = [ ../../modules/users/guest/default.nix ]; };
     };
 }

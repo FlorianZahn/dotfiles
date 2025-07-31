@@ -10,7 +10,7 @@ This folder contains configurations for all my machines.
 
 A machine folder contains:
 
-- **bundle.nix** - bundles the other 3 locations
+- **default.nix** - bundles the other 3 locations
 - **configuration.nix** - system configuration using core system configuration and optional settings.
 - **hardware-configuration.nix**
 - **user folder** - Users are declared here. Each user is configured using their core configuration and optional settings for this machine.
