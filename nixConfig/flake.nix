@@ -19,6 +19,7 @@
         systems = {
             "Desktop-Home" = ./hosts/client/Desktop-Home-NixOs;
             "Laptop-Hp"    = ./hosts/client/Laptop-Hp;
+            "Test-NixOs"    = ./hosts/vm/Test-NixOs;
             # Add other hosts here, for example:
             # "proxmox-vm" = ./nixConfig/hosts/vm/proxmox-vm;
         };
