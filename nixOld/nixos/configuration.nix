@@ -37,7 +37,7 @@
 
   users.users.florian = {
     isNormalUser = true;
-    extraGroups = [ "networkmanager wheel" ];
+    extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       tree
     ];
@@ -45,8 +45,8 @@
   };
 
   programs.firefox.enable = true;
-  programs.hyprland.enable = true; 
   programs.zsh.enable = true;
+  programs.hyprland.enable = true;
   xdg.portal.enable = true;
 
 
@@ -66,7 +66,11 @@
   ];
 
   # Services
-  services.openssh.enable = true;
+  services = {
+    openssh.enable = true;
+    displayManager.sddm.enable = true;
+    displayManager.sddm.wayland.enable = true;
+  };
 
   system.stateVersion = "25.05";
 
