@@ -8,7 +8,7 @@
         sops-nix.url = "github:Mic92/sops-nix";
     };
 
-    outputs = { self, nixpkgs, home-manager, ... }@inputs:
+    outputs = { self, nixpkgs, home-manager, sops-nix, ... }@inputs:
         let
         # --- HELFER-FUNKTIONEN ---
 
