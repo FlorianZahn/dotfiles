@@ -57,7 +57,7 @@
             "Laptop-Hp"    = "client/Laptop-Hp";
             "Test-NixOs"   = "vm/Test-NixOs";
         };
-        systems = nixpkgs.lib.mapAttrs (hostName: pathString: (./hosts)/${pathString}) hostDefinitions;
+        systems = nixpkgs.lib.mapAttrs (hostName: pathString: (./hosts + "/${pathString}")) hostDefinitions;
 
         in
         {
